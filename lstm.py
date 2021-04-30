@@ -119,7 +119,7 @@ def train(model, network_input, network_output):
         mode='min'
     )
     callbacks_list = [checkpoint]
-    #model.load_weights('/content/drive/MyDrive/Colab Notebooks/Drums/weights-improvement-13-1.9972-bigger.hdf5')
+    model.load_weights('/content/drive/MyDrive/Colab Notebooks/Classical Piano 2/weights-improvement-07-3.3489-bigger.hdf5')
 
     model.fit(network_input, network_output, epochs=200, batch_size=128, callbacks=callbacks_list)
 
